@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Code Generator</title>
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="manifest" href="./manifest.json" crossorigin="use-credentials">
+
+    <script src="./js/main.js" defer></script>
+</head>
+<body>
+    <nav id="navigation">
+        <div class="overlay">
+            <h1>Product Code Generator</h1>
+        </div>        
+    </nav>
+
+    <header>
+
+    </header>
+
+    <main>
+        <section id="product-info">
+            <div class="product-info-inputs">
+                <div class="input-block">
+                    <label for="company-name">Company Name</label>
+                    <input id="company-name" type="text" placeholder="Company Name" required>
+                </div>
+                <div class="input-block">
+                    <label for="product-name">Product Name</label>
+                    <input id="product-name" type="text" placeholder="Product Name" required>
+                </div>
+            </div>
+            <div class="button-container">
+                <input class="generate-button" type="button" value="Generate Code">
+            </div>
+        </section>
+
+        <section id="code-display">
+            <div class="display-heading">
+                <h2>Product Code</h2>
+            </div>
+            <div class="first-option display-one">
+
+            </div>
+            <div class="other-options display-two">
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <p>&copy; Copyright 2020. Developed by Matthew Rungwe</p>
+        </div>
+    </footer>
+
+    <script>
+        if('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker
+                    .register('/sw.js')
+                    .then((reg) => {
+                        console.log("Service Worker Registered", reg);
+                    })
+                    .catch((err) => {
+                        console.log("Service Worker Registration Failed", err);
+                    })
+            })
+        }
+    </script>
+</body>
+</html>

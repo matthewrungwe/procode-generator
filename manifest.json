@@ -1,0 +1,17 @@
+{
+    "short_name": "Code Generator",
+    "name": "Product code generator",
+    "description": "Generates company specific product codes",
+    "icons": [
+        {
+            "src": "./assets/images/icon.png",
+            "type": "image/png",
+            "sizes": "400x400"
+        }
+    ],
+    "start_url": "/?source=pwa",
+    "background_color": "#3367D6",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#3367D6"
+}

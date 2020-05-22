@@ -1,0 +1,174 @@
+/* Global Styles */
+*{
+    margin: 0;
+}
+
+body{
+    font-family: 'Roboto', Georgia, sans-serif;
+}
+/* Global Styles end */
+
+/* Navigation */
+    #navigation{
+        width: 100%;
+        height: 45vh;
+        background-image: url('../assets/images/library.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .overlay{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(51, 51, 51, 0.5);
+    }
+
+    h1{
+        color: white;
+        text-align: center;
+        font-size: 32px;
+        padding-top: 120px;
+    }
+/* Navigation end */
+
+/* Main */
+/* Product info section */
+#product-info{
+    /* border: 1px solid red; */
+    background-color: #343a40;
+    padding: 25px 0; 
+}
+
+.product-info-inputs{
+    width: 90%;
+    max-width: 500px;
+    height: 200px;
+    margin: 0 auto;
+    /* border: 1px solid green; */
+}
+
+.input-block{
+    width: 95%;
+    height: 67px;
+    padding: 10px;
+    margin: 5px auto;
+    /* border: 1px solid blue; */
+}
+
+.input-block label{
+    font-size: 18px;
+    padding: 5px;
+    color: white;
+}
+
+.input-block input{
+    color: #6c757d;
+    height: 50px;
+    width: 90%;
+    padding-left: 5px;
+    Font-size: 18px;
+}
+
+.button-container{
+    width: fit-content;
+    margin: 10px auto;
+}
+
+.generate-button{
+ color: #343a40;
+ font-size: 18px;
+ height: 50px;
+ background-color: white;
+ border: 1px solid white;
+ border-radius: 10px;
+}
+
+.generate-button:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    font-size: 19px;
+}
+/* Product info section end */
+
+/* Product code display section */
+#code-display{
+    /* border: 1px solid orange; */
+    padding-bottom: 20px;
+}
+
+.display-heading{
+    width: 80%;
+    margin: 10px auto;
+}
+
+.display-heading h2{
+    color: #343a40;
+    font-size: 28px;
+    text-align: center;
+    padding: 5px;
+}
+
+.display-one{
+    /* border: 1px solid green; */
+    width: 300px;
+    height: 150px;
+    margin: 0 auto;
+    background-color: #343a40;
+}
+
+.display-one p{
+    position: relative;
+    top: 30%;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+/* Product code display section end */
+/* Main  end */
+
+/* Footer */
+footer{
+    height: 20vh;
+    margin-top: 10px;
+    background-color: #343a40;
+}
+
+footer div{
+    padding-top: 25px;
+}
+
+footer p {
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+/* Footer end */
+
+@media screen and (min-width: 678px) {
+    /* Navigation */
+    h1{
+        font-size: 45px;
+    }
+
+    .input-block{
+        display: flex;
+    }
+
+    label{
+        flex: 1;
+    }
+
+    input{
+        flex: 1.8;
+    }
+    /* Navigation end */
+}
+
+@media screen and (max-width: 678px) {
+    /* Navigation */
+    .input-block{
+        display: flex;
+        flex-flow: column;
+    }
+    /* Navigation end */
+}

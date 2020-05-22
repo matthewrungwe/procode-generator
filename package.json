@@ -1,0 +1,15 @@
+{
+  "name": "product-code-generator",
+  "version": "1.0.0",
+  "description": "Generating company unique product codes",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Matthew Rungwe",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
